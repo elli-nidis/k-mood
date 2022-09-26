@@ -30,13 +30,10 @@
 
             <ul class="navbar-nav top-menu">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                <a class="nav-link" aria-current="page" href="index.php">Главная</a>
               </li>
-              <li class="nav-item"><a class="nav-link" href="#">Музыка</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Сериалы</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Рейтинг</a>
-              </li>
+              <li class="nav-item"><a class="nav-link" href="music.php">Музыка</a></li>
+              <li class="nav-item"><a class="nav-link" href="dorams.php">Сериалы</a></li>
               <li class="nav-item">
                 <a class="nav-link" href="#"
                   >Контакты&nbsp<i class="fa-solid fa-envelope"></i
