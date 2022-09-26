@@ -1,0 +1,85 @@
+
+
+.h1{
+	margin-bottom: 0 !important;
+}
+
+.logo-image {
+	width: 5rem;
+margin-right: 5%;
+}
+
+.logo-text{
+	font-size: 3rem;
+}
+
+.logo-text, .logo-slogan{
+	letter-spacing: 0.2rem;
+	margin: -3% 0 0 0%;
+	padding: 0;
+	display: inline-block;
+}
+
+.logo-text-monster {
+	color: #128888;
+}
+
+.logo-slogan{
+	padding: 0 0 0 25%;
+}
+
+.navbar-collapse .navbar-nav{
+	text-transform: uppercase;
+}
+
+.navbar-nav{
+	margin-top: 10%;
+}
+
+.top-menu li a::before, .top-menu li a::after {
+content: "";
+display: block;
+width: 100%;
+background-color: var(--bs-nav-link-color);
+height: 1px;
+transition: all 0.4s;
+transform: scale(0);
+
+}
+
+.top-menu li a:hover::before, .top-menu li a:hover::after {
+	transform: scale(1);
+}
+
+
+
+.sing-name figcaption:hover, .film-name figcaption:hover, .footer i:hover {
+	color: #fff;
+}
+
+.telegram {
+	color: #128888;
+}
+
+@media (max-width: 768px) {
+	.top-menu li, .logo-text, .logo-slogan{
+		text-align: center;
+	}
+
+	.logo-text{
+		font-size: 2rem;
+	}
+
+	
+	.logo-slogan{
+		text-align: center;
+	}
+	.navbar-nav{
+		margin-top: 2%;
+	}
+}
+
+
+
+
+
