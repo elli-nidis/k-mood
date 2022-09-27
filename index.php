@@ -14,6 +14,9 @@
 		<!-------- Bootstrap v5.2.0-beta1-------->
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+
 		<!-------- STYLE CSS-------->
 		<link rel="stylesheet" href="assets/css/index.css" />
 
@@ -100,8 +103,6 @@
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
-		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="assets/js/bootstrap.min.js"></script>
 
 		<!-- Initialize Swiper -->
 		<script src="assets/js/initSwiper.js"></script>

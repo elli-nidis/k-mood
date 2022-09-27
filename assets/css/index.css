@@ -6,7 +6,7 @@
 
 .logo-image {
 	width: 5rem;
-margin-right: 5%;
+	margin-right: 5%;
 }
 
 .logo-text{
@@ -36,7 +36,7 @@ margin-right: 5%;
 	margin-top: 10%;
 }
 
-.top-menu li a::before, .top-menu li a::after {
+.top-menu li::before, .top-menu li::after {
 content: "";
 display: block;
 width: 100%;
@@ -47,7 +47,7 @@ transform: scale(0);
 
 }
 
-.top-menu li a:hover::before, .top-menu li a:hover::after {
+.top-menu li:hover::before, .top-menu li:hover::after {
 	transform: scale(1);
 }
 
@@ -59,6 +59,14 @@ transform: scale(0);
 
 .telegram {
 	color: #128888;
+}
+
+.eye {
+	cursor: pointer;
+	color: #218838;
+	background-color: #ffffff;
+	border-top-right-radius: .25rem;
+	border-bottom-right-radius: .25rem;
 }
 
 @media (max-width: 768px) {

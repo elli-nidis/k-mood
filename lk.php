@@ -7,7 +7,7 @@
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
 		<title>K-mood</title>
-
+		
 		<!-------- FAVIKON-------->
 		<link rel="icon" type="image/svg+xml" href="assets/img/KMonster.svg" />
 
@@ -18,15 +18,15 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 
 		<!-------- STYLE CSS-------->
-		<link rel="stylesheet" href="assets/css/index.css"/>
+		<link rel="stylesheet" href="assets/css/index.css" />
 
 		<!-------- FONTAWESOME-------->
 		<script src="https://kit.fontawesome.com/972f7543c8.js" crossorigin="anonymous"></script>
 
 	<style>
-		.bamboo {
-			background-image: url(assets/img/bamboo_1.png);
-			background-size: contain;
+		.sarang {
+			background-image: url(assets/img/sarang.png);
+			background-size:unset;
 			background-repeat: no-repeat;
 			background-position: 100% 0%;
 		}
@@ -41,30 +41,21 @@
 <!--------------------HEADER END-------------------->
 
 
-	<!--CONTENT-->
-	<div class="container-fluid bg-dark bg-opacity-50 min-vh-100 bamboo">
-
+	<!--------------------CONTENT START-------------------->
+	<div class="container-fluid bg-dark bg-opacity-50 min-vh-100 sarang">
 		<div class="container bg-secondary bg-opacity-50 text-white min-vh-100">
 
-	<div class="container pt-5 ">
-		<div class="row justify-content-center">
-			<h2 class="h2 mb-3 text-white"> <i class="fa-regular fa-heart"></i> K-pop музыка</h2>
-			<div class="col-md-8">
-				<div class="ratio ratio-16x9 border">
-					<iframe class="" src="https://vk.com/video_ext.php?oid=-46341065&id=456243543&hash=414f7535eddc8afd&hd=2" 
-					width="853" height="480" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" 
-					frameborder="0" allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
-	</div>
+		
 
-</div>
 	</div>
+</div>
+<!--------------------CONTENT END-------------------->
 
 <!--------------------FOOTER START-------------------->
 		<?php require_once("footer.php") ?>
 <!--------------------FOOTER END-------------------->
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>

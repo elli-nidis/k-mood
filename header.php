@@ -18,29 +18,35 @@
             class="navbar-toggler "
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div id="navbarNav" class="collapse navbar-collapse justify-content-end">
+					<div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
 
-            <ul class="navbar-nav top-menu">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.php">Главная</a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="music.php">Музыка</a></li>
-              <li class="nav-item"><a class="nav-link" href="dorams.php">Сериалы</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  >Контакты&nbsp<i class="fa-solid fa-envelope"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
+						<ul class="navbar-nav top-menu">
+							<li class="nav-item"><a class="nav-link" href="index.php">Главная</a>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="music.php">Музыка</a></li>
+							<li class="nav-item"><a class="nav-link" href="dorams.php">Сериалы</a></li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Контакты&nbsp<i class="fa-solid fa-envelope"></i></a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">&nbsp;&nbsp;
+								<i class="fa-regular fa-user"></i>&nbsp;&nbsp;&nbsp;
+								</a>
+									<ul class="dropdown-menu dropdown-menu-dark">
+										<li><a class="dropdown-item" href="auth.php">Авторизация</a></li>
+										<li><a class="dropdown-item" href="reg.php">Регистрация</a></li>
+									</ul>
+							</li>
+						</ul>
+					</div>
         </div>
       </div>
     </nav>
