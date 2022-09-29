@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<title>K-mood</title>
+		<title>Авторизация</title>
 
 		<!-------- FAVIKON-------->
 		<link rel="icon" type="image/svg+xml" href="assets/img/KMonster.svg" />
@@ -29,9 +29,7 @@
 				background-size: contain;
 				background-repeat: no-repeat;
 			}
-
 	</style>
-
 	</head>
 
 	<body>
@@ -79,14 +77,13 @@
 
 			</div>
 		</div>
-	
 	<!--------------------CONTENT END-------------------->
 
 		<!--------------------FOOTER START-------------------->
 		<?php require_once("footer.php") ?>
 		<!--------------------FOOTER END-------------------->
 
-
+		<!--------------------AUTHORIZATION SCRIPT START-------------------->
 		<script>
 			async function checkForm(form) {
 				let response = await fetch("./assets/php/obr_auth.php", {
@@ -103,12 +100,10 @@
         }
 			}
 		</script>
-
-	
+		<!--------------------AUTHORIZATION SCRIPT END-------------------->
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-
 
 	</body>
 </html>

@@ -12,9 +12,9 @@ include "./assets/php/obr_show.php";
 							{
 								echo '
 							<figure class="swiper-slide">
-								<a href="#"> <img class="card-img mb-2" src="'.$music['img_music'].'" alt="'.$music['artist'].' '.$music['song'].'"></a>
+								<a href="'.$music['url_song'].'" class="tube"> <img class="card-img mb-2" src="assets/img/img_music/'.$music['img_music'].'" alt="'.$music['artist'].' '.$music['song'].'"></a>
 								<figcaption class="h5">'.$music['artist'].'</figcaption>
-								<a href="#" class="text-decoration-none text-white-50 sing-name link">
+								<a href="'.$music['url_song'].'" class="text-decoration-none text-white-50 sing-name link tube">
 									<figcaption class="h5">'.$music['song'].'</figcaption></a>
 							</figure>';
 							}

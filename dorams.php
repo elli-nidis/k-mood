@@ -24,6 +24,8 @@ include "./assets/php/obr_show.php";
 		<!-------- STYLE CSS-------->
 		<link rel="stylesheet" href="assets/css/index.css" />
 
+		
+
 		<!-------- FONTAWESOME-------->
 		<script src="https://kit.fontawesome.com/972f7543c8.js" crossorigin="anonymous"></script>
 
@@ -45,7 +47,7 @@ include "./assets/php/obr_show.php";
 <!--------------------HEADER END-------------------->
 
 
-	<!--CONTENT-->
+	<!--------------------CONTENT START-------------------->
 	<div class="container-fluid bg-dark bg-opacity-50 min-vh-100 bamboo">
 
 		<div class="container bg-secondary bg-opacity-50 text-white min-vh-100">
@@ -60,7 +62,7 @@ include "./assets/php/obr_show.php";
 			<div class="card text-bg-secondary mb-3" style="max-width: 540px;">
 				<div class="row g-0">
 					<div class="col-md-4">
-					<a href="#"><img src="'.$dorams['img_dorama'].'" class="img-fluid rounded-start" alt="'.$dorams['dorama_name'].'"></a>
+					<a href="'.$dorams['url_dorama'].'" class="vk"><img src="assets/img/img_dorams/'.$dorams['img_dorama'].'" class="img-fluid rounded-start" alt="'.$dorams['dorama_name'].'"></a>
 					</div>
 					<div class="col-md-8">
 						<div class="card-body">
@@ -74,9 +76,8 @@ include "./assets/php/obr_show.php";
 		?>
 		</div>
 	</div>
-
 </div>
-
+<!--------------------CONTENT END-------------------->
 
 <!--------------------FOOTER START-------------------->
 		<?php require_once("footer.php") ?>
@@ -84,7 +85,6 @@ include "./assets/php/obr_show.php";
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-
 
   </body>
 </html>

@@ -23,6 +23,11 @@
 		<!-------- SWIPER JS CDN-------->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
+		<!-------- VIDEOTUBE JS-------->
+		<link rel="stylesheet" href="assets/videotube/videotube.min.css">
+		<script src="assets/videotube/videotube.min.js"></script>
+
+
 		<!-------- FONTAWESOME-------->
 		<script src="https://kit.fontawesome.com/972f7543c8.js" crossorigin="anonymous"></script>
 
@@ -81,21 +86,6 @@
 		<!--------------------FOOTER START-------------------->
 		<?php require_once("footer.php") ?>
 		<!--------------------FOOTER END-------------------->
-
-		<script>
-
-			function getShow() {
-				location = "show.php";
-			}
-
-			for(let link of document.getElementsByClassName('card-img')) 
-			link.addEventListener('click', e => e.target = getShow());
-
-			for(let link of document.getElementsByClassName('link')) 
-			link.addEventListener('click', e => e.target = getShow());
-			
-		</script>
-
 
 		<!-- Swiper JS CDN-->
 		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

@@ -1,7 +1,3 @@
-<?php 
-include "./assets/php/obr_show.php";
-?>
-
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
@@ -10,8 +6,8 @@ include "./assets/php/obr_show.php";
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<title>K-mood</title>
-
+		<title>Info</title>
+		
 		<!-------- FAVIKON-------->
 		<link rel="icon" type="image/svg+xml" href="assets/img/KMonster.svg" />
 
@@ -24,16 +20,12 @@ include "./assets/php/obr_show.php";
 		<!-------- STYLE CSS-------->
 		<link rel="stylesheet" href="assets/css/index.css" />
 
-		<!-------- VIDEOTUBE JS-------->
-		<link rel="stylesheet" href="assets/videotube/videotube.min.css">
-		<script src="assets/videotube/videotube.min.js"></script>
-
 		<!-------- FONTAWESOME-------->
 		<script src="https://kit.fontawesome.com/972f7543c8.js" crossorigin="anonymous"></script>
 
 	<style>
-		.bamboo {
-			background-image: url(assets/img/bamboo_1.png);
+		.bts {
+			background-image: url(assets/img/bts.png);
 			background-size: contain;
 			background-repeat: no-repeat;
 			background-position: 100% 0%;
@@ -50,32 +42,22 @@ include "./assets/php/obr_show.php";
 
 
 	<!--------------------CONTENT START-------------------->
-	<div class="container-fluid bg-dark bg-opacity-50 min-vh-100 bamboo">
-
+	<div class="container-fluid bg-dark bg-opacity-50 min-vh-100 bts">
 		<div class="container bg-secondary bg-opacity-50 text-white min-vh-100">
 
-	<div class="container pt-5 pb-5">
-			<h2 class="h2 mb-3 text-white"> <i class="fa-regular fa-heart"></i> K-pop музыка</h2>
+		<div class="container">
+			<h1 class="text-center pt-5 mb-5">Информация для правообладателей</h1>
 
-			<?php 
-							while($music = mysqli_fetch_assoc($result_music))
-							{
-								echo '
-			<div class="card text-bg-secondary mb-3" style="max-width: 540px;">
-				<div class="row g-0">
-					<div class="col-md-4">
-					<a href="'.$music['url_song'].'" class="tube"><img src="assets/img/img_music/'.$music['img_music'].'" class="img-fluid rounded-start" alt="'.$music['artist'].' '.$music['song'].'"></a>
-					</div>
-					<div class="col-md-8">
-						<div class="card-body">
-							<h5 class="card-title">'.$music['artist'].'</h5>
-							<p class="card-text">'.$music['song'].'</p>
-						</div>
-					</div>
-				</div>
-			</div>';
-		}
-		?>
+			<p class="h4 text-black-50">
+			Сайт создан как учебный проект и не преследует коммерческих целей.
+			<br><br>
+			Материалы и ссылки, размещенные на сайте, расположены в свободном доступе в сети Интернет. При обнаружении материалов, нарушающих ваши авторские права, вы можете написать на адрес электронной почты: mithos@rambler.ru, предоставив следующую информацию:
+			<br>
+			— Документ, свидетельствующий о наличии у вас исключительных прав на материал, размещенный на сайте.
+			<br>
+			— Прямые ссылки на страницы сайта с материалами, которые нарушают ваши авторские права и вы не хотите, чтобы они были размещены без вашего согласия.
+			</p>
+
 		</div>
 	</div>
 
@@ -86,9 +68,9 @@ include "./assets/php/obr_show.php";
 		<?php require_once("footer.php") ?>
 <!--------------------FOOTER END-------------------->
 
+
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-
 
 	</body>
 </html>

@@ -5,8 +5,8 @@
       <div class="container-fluid">
 		
         <div class="container logo">
-          <a class="navbar-brand text-success" href="#">
-						<img class="logo-image" src="assets/img/KMonster.svg"/>
+          <a class="navbar-brand text-success" href="index.php">
+						<img class="logo-image" src="assets/img/kmood.svg"/>
             <h1 class="h1 logo-text">К-</h1>
             <h1 class="h1 logo-text logo-text-monster">MOOD</h1>
 					</a>
@@ -34,7 +34,7 @@
 							<li class="nav-item"><a class="nav-link" href="music.php">Музыка</a></li>
 							<li class="nav-item"><a class="nav-link" href="dorams.php">Сериалы</a></li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Контакты&nbsp<i class="fa-solid fa-envelope"></i></a>
+								<a class="nav-link" href="info.php" title="Информация для правообладателей">&nbsp<i class="fa-solid fa-info"></i>&nbsp</a>
 							</li>
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">&nbsp;&nbsp;

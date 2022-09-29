@@ -5,7 +5,7 @@ $mysqli = mysqli_connect("localhost", "moiixmmx_k-mood-m-n-d", "18MpFeS!983epTh"
 if ($mysqli == false){
 print("error");
 
- } else{																						//Если подключение произошло, привязываю значения из формы к переменным БД
+ } else{												//Если подключение произошло, привязываю значения из формы к переменным PHP
 $name = $_POST["name"];
 $lastname = $_POST["lastname"];
 $email = trim(mb_strtolower($_POST["email"]));
@@ -16,8 +16,8 @@ $result = $mysqli->query("SELECT * FROM `users` WHERE `email` = '$email'");		//�
 
 if($result->num_rows !== 0){						//если количество таких email в БД отлично от нуля (т.е. пользователь уже зарегистрирован)
 	print("exist");
-} else {
-		$mysqli->query("INSERT INTO `users`(`user_name`, `user_lastname`, `email`, `pass`, `data_reg`) VALUES ('$name', '$lastname', '$email', '$pass', NOW())");	//Иначе (такого пользователя еще нет) ввожу данные из формы в БД
+} else {																//иначе произвожу запись в БД
+		$mysqli->query("INSERT INTO `users`(`user_name`, `user_lastname`, `email`, `pass`, `date_reg`) VALUES ('$name', '$lastname', '$email', '$pass', NOW())");	//Иначе (такого пользователя еще нет) ввожу данные из формы в БД
 		print("ok");
 }
 }

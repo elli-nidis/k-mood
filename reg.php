@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<title>K-mood</title>
+		<title>Регистрация</title>
 		
 		<!-------- FAVIKON-------->
 		<link rel="icon" type="image/svg+xml" href="assets/img/KMonster.svg" />
@@ -30,7 +30,6 @@
 			background-repeat: no-repeat;
 		}
 	</style>
-
 	</head>
 
 	<body>
@@ -105,8 +104,8 @@
 		<?php require_once("footer.php") ?>
 <!--------------------FOOTER END-------------------->
 
-
-<script>
+<!--------------------REGISTRATION SCRIPT-------------------->
+		<script>
 			async function sendForm(form){
 				let response = await fetch("./assets/php/obr_reg.php", {
 					method: "POST", 
@@ -115,6 +114,7 @@
 				let result = await response.text();
 				if(result == "ok") {
 					alert("Регистрация нового пользователя прошла успешно");
+					location.href = "auth.php";
 				} else { 
 					info.innerHTML = "Такой пользователь уже есть";
 				}
