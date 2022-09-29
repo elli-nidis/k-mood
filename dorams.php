@@ -24,7 +24,9 @@ include "./assets/php/obr_show.php";
 		<!-------- STYLE CSS-------->
 		<link rel="stylesheet" href="assets/css/index.css" />
 
-		
+		<!-------- VIDEOTUBE JS-------->
+		<link rel="stylesheet" href="assets/videotube/videotube.min.css">
+		<script src="assets/videotube/videotubevk.js"></script>
 
 		<!-------- FONTAWESOME-------->
 		<script src="https://kit.fontawesome.com/972f7543c8.js" crossorigin="anonymous"></script>

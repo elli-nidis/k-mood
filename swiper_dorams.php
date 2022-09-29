@@ -13,7 +13,7 @@ include "./assets/php/obr_show.php";
 									echo '
 								<figure class="swiper-slide">
 									<a href="'.$dorams['url_dorama'].'" class="vk"> <img class="card-img mb-2" src="assets/img/img_dorams/'.$dorams['img_dorama'].'" alt="'.$dorams['dorama_name'].'"></a>
-									<a href="#" class="text-decoration-none text-white-50 film-name link"><figcaption class="h5">'.$dorams['dorama_name'].'</figcaption></a>
+									<a href="'.$dorams['url_dorama'].'" class="text-decoration-none text-white-50 film-name link vk"><figcaption class="h5">'.$dorams['dorama_name'].'</figcaption></a>
 								</figure>';
 							}
 							?>

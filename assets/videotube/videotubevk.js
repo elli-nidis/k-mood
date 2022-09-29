@@ -71,7 +71,7 @@
 })();
 
 
-const init = () => {
+const initvk = () => {
 
 	const overlay = document.createElement('div');
 	overlay.className = 'videotube-modal-overlay'
@@ -122,7 +122,7 @@ const init = () => {
 		sizeVideo();
 	}
 
-	const closeVideoTubeModal = () => {
+	const closeVideoTubeModalVk = () => {
 
 		animation(overlay, {
 				end: [['display', 'none']],
@@ -139,19 +139,19 @@ const init = () => {
 
 	const closeContainerEsc = e => {
 		if (e.keyCode === 27) {
-			closeVideoTubeModal();
+			closeVideoTubeModalVk();
 		}
 	}
 
 
-	const openVideoTubeModal = e => {
+	const openVideoTubeModalVk = e => {
 			const target = e.target.closest('.vk');
 			if (!target) return;
 
-			// const href = target.href;
-			// const search = href.includes('video');
-			// let idVideo = href.match(/(\?|&)v=([^&]+)/)[2];
-			let idVideo = target.href;
+			const href = target.href;
+			const search = href.includes('video');
+			let idVideo = href.match(/(oid=-)([^?]+)/)[2];
+		
 
 			if (idVideo.length === 0) return;
 
@@ -168,7 +168,7 @@ const init = () => {
 			<div id="videotube-modal-loading">Загрузка...</div>
 			<div id="videotube-modal-close">&#10006;</div>
 			<div id="videotube-modal-container">
-				<iframe src="`idVideo`" 
+				<iframe src="https://vk.com/video_ext.php?oid=-${idVideo}" 
 									frameborder="0"
 					id="videotube-modal" 
 					allowfullscreen
@@ -186,10 +186,10 @@ const init = () => {
 	;
 
 
-	overlay.addEventListener("click", closeVideoTubeModal);
-	document.addEventListener('click', openVideoTubeModal)
+	overlay.addEventListener("click", closeVideoTubeModalVk);
+	document.addEventListener('click', openVideoTubeModalVk)
 
 }
 
-document.addEventListener('DOMContentLoaded', init)
+document.addEventListener('DOMContentLoaded', initvk)
 

@@ -25,7 +25,6 @@
 
 		<!-------- VIDEOTUBE JS-------->
 		<link rel="stylesheet" href="assets/videotube/videotube.min.css">
-		<script src="assets/videotube/videotube.min.js"></script>
 		<script src="assets/videotube/videotubevk.js"></script>
 
 
@@ -102,3 +101,4 @@
 
 	</body>
 </html>
+
