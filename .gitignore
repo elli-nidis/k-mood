@@ -1,1 +1,5 @@
-./assets/php/*.*
+/assets/php/obr_auth.php
+/assets/php/obr_lk.php
+/assets/php/obr_reg.php
+/assets/php/obr_show.php
+/assets/php/sendMessage.php
